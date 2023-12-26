@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.vtw.dna'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    implementation 'org.graalvm.js:js:23.0.2'
+    implementation 'org.graalvm.js:js-scriptengine:23.0.2'
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
